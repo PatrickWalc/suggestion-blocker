@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "SuggestionBlocker",
+    "description": "Extension to block suggestions while watching youtube-videos.",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": [ "*://*.youtube.com/*" ],
+        "js": [ "suggestion-blocker.js" ],
+        "run_at": "document_start"
+    }]
+}
